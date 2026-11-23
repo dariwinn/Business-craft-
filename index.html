@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Craft — Tactical Card Strategy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       FRAME 1: LANDING PAGE
+  ========================================================== -->
+  <section id="frame-1" class="screen active">
+    <div class="landing-wrapper">
+      <!-- Top Navbar -->
+      <header class="landing-nav">
+        <div class="brand-logo" onclick="navigateTo('frame-1')">
+          <div class="logo-mark burgundy-mark"></div>
+          <span class="logo-text">BUSINESS CRAFT</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#modes">Modes</a>
+          <a href="#pricing">Pricing</a>
+        </nav>
+        <div class="nav-actions">
+          <span class="lang-switch">EN</span>
+          <button class="btn-login-outline" onclick="navigateTo('frame-2')">Log In</button>
+        </div>
+      </header>
+
+      <div class="divider-line"></div>
+
+      <!-- Hero Section -->
+      <div class="landing-hero">
+        <div class="hero-left">
+          <p class="script-accent burgundy-text">Think like a founder. Play like a strategist</p>
+          <h1 class="hero-title">Master Business<br>Strategy Through<br>Tactical Card Play</h1>
+          <p class="script-body">
+            Build your empire, one smart move at a time. Team up<br>
+            with specialized AI agents in 3v3 co-op, or outthink<br>
+            real opponents in high-stakes market duels.
+          </p>
+
+          <div class="hero-cta-row">
+            <button class="btn-burgundy-solid" onclick="navigateTo('frame-2')">
+              <span>Start Playing for Free</span>
+              <span class="arrow">→</span>
+            </button>
+            <button class="btn-watch" onclick="navigateTo('frame-3')">
+              <span class="play-triangle">▷</span>
+              <span>Watch gameplay</span>
+            </button>
+          </div>
+
+          <div class="hero-rating">
+            <div class="stars">★★★★★</div>
+            <span class="rating-score">4.9 / 5</span>
+          </div>
+          <p class="rating-caption">Built for the next generation of decision-makers.</p>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card-showcase">
+            <!-- Left Tilted Card -->
+            <div class="showcase-card card-left">
+              <div class="sc-header green-bg">
+                <span>03</span>
+                <span>GROWTH</span>
+              </div>
+              <div class="sc-art gray-art">
+                <div class="bar-chart-icon">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="sc-body">
+                <h4>Growth</h4>
+                <p>Scale with...</p>
+                <div class="sc-badge">+25% RE</div>
+              </div>
+            </div>
+
+            <!-- Center Main Card -->
+            <div class="showcase-card card-center">
+              <div class="sc-header green-bg">
+                <span>05</span>
+                <span>CAPITAL</span>
+              </div>
+              <div class="sc-art cream-art">
+                <!-- Isometric City SVG Illustration -->
+                <svg viewBox="0 0 160 120" class="iso-city">
+                  <ellipse cx="80" cy="70" rx="58" ry="34" fill="none" stroke="#C89B54" stroke-width="1" stroke-dasharray="3 3"/>
+                  <!-- Tower 1 -->
+                  <polygon points="65,30 85,20 105,30 85,40" fill="#D98A6C"/>
+                  <polygon points="65,30 85,40 85,82 65,72" fill="#8E354A"/>
+                  <polygon points="85,40 105,30 105,72 85,82" fill="#631D2E"/>
+                  <!-- Tower 2 -->
+                  <polygon points="45,48 62,40 78,48 62,56" fill="#E6B89C"/>
+                  <polygon points="45,48 62,56 62,86 45,78" fill="#A64B5E"/>
+                  <polygon points="62,56 78,48 78,78 62,86" fill="#7A2033"/>
+                  <!-- Tower 3 -->
+                  <polygon points="90,54 106,46 122,54 106,62" fill="#C89B54"/>
+                  <polygon points="90,54 106,62 106,88 90,80" fill="#235744"/>
+                  <polygon points="106,62 122,54 122,80 106,88" fill="#153B2E"/>
+                </svg>
+              </div>
+              <div class="sc-body">
+                <h3>Venture Capital</h3>
+                <p>Big ideas need bold backing.</p>
+                <div class="sc-footer">
+                  <span>RARE / INVESTMENT</span>
+                  <span class="bolt">⚡</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Tilted Card -->
+            <div class="showcase-card card-right">
+              <div class="sc-header burgundy-bg">
+                <span>07</span>
+                <span>TACTIC</span>
+              </div>
+              <div class="sc-art pink-art">
+                <span class="multiplier-big">×2</span>
+              </div>
+              <div class="sc-body">
+                <h4>Disruption</h4>
+                <p>Change the rules.</p>
+                <div class="sc-footer">
+                  <span>EPIC / OFFENSIVE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-caption">STRATEGY IS YOUR STRONGEST AS</div>
+            <div class="floating-pill">
+              <span class="pill-icon">↗</span>
+              <span>YOUR NEXT MOVE: BRILLIANT.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Strip -->
+    <div class="stats-banner">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-num">12,000+</div>
+          <div class="stat-label">STRATEGISTS AT THE TABLE</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">150+</div>
+          <div class="stat-label">UNIQUE STRATEGY CARDS</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">3v3 + 1v1</div>
+          <div class="stat-label">TWO WAYS TO OUTTHINK</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">SKILL. ZERO PAY-TO-WIN.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Two Arenas Section -->
+    <div class="landing-wrapper arenas-section" id="modes">
+      <div class="arenas-header">
+        <div>
+          <p class="script-accent burgundy-text">Two arenas. Endless possibilities.</p>
+          <h2 class="section-title">Different games. Same ambition.</h2>
+        </div>
+        <p class="muted-note">Real business instincts. Forged at the table.</p>
+      </div>
+
+      <div class="arenas-grid">
+        <!-- Green Arena Card -->
+        <div class="arena-card green-card" onclick="navigateTo('frame-2')">
+          <div class="arena-content">
+            <span class="arena-tag">01 / COLLABORATE</span>
+            <h3>Build your dream team.</h3>
+            <p class="script-white">
+              Three minds. One winning strategy.<br>
+              Lead specialized AI agents through<br>
+              real-world business challenges.
+            </p>
+            <div class="arena-link">
+              <span>Explore 3v3 co-op</span>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="arena-visual">
+            <div class="mini-deck-card back-c"></div>
+            <div class="mini-deck-card front-c">
+              <div class="mini-art"></div>
+              <div class="mini-label">THE VISIONARY</div>
+              <div class="mini-sub">STRATEGIC ASSET</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Burgundy Arena Card -->
+        <div class="arena-card burgundy-card" onclick="navigateTo('frame-2')">
+          <div class="arena-content">
+            <span class="arena-tag">02 / COMPETE</span>
+            <h3>Own the market.</h3>
+            <p class="script-white">
+              A worthy rival. A volatile market.<br>
+              Negotiate, disrupt, and outmaneuver<br>
+              your way to the top.
+            </p>
+            <div class="arena-link">
+              <span>Discover 1v1 PvP</span>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="arena-visual">
+            <div class="mini-deck-card front-c">
+              <div class="mini-art"></div>
+              <div class="mini-label">PRICE WAR</div>
+              <div class="mini-sub">STRATEGIC ASSET</div>
+            </div>
+            <div class="price-badge">× 2.4</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Strip -->
+      <div class="skills-strip">
+        <span class="skills-lead">LEARN BY PLAYING</span>
+        <span>Negotiation</span>
+        <span>Risk management</span>
+        <span>Resource allocation</span>
+        <span>Competitive thinking</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="landing-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>BUSINESS CRAFT</strong>
+          <p>Play the long game.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#modes">Game modes</a>
+          <a href="#fair">Fair play</a>
+        </div>
+        <a href="#community" class="community-link">Join the community ↗</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Business Craft. All rights reserved.</span>
+        <div>
+          <a href="#privacy">Privacy policy</a> · <a href="#terms">Terms of play</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <!-- =========================================================
+       FRAME 2: COMMAND CENTER (DASHBOARD)
+  ========================================================== -->
+  <section id="frame-2" class="screen">
+    <div class="dashboard-layout">
+      <!-- Left Dark Green Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <div class="brand-logo light" onclick="navigateTo('frame-1')">
+            <div class="logo-mark gold-outline"></div>
+            <span class="logo-text">BUSINESS<br>CRAFT</span>
+          </div>
+
+          <div class="sidebar-divider"></div>
+
+          <div class="user-profile">
+            <div class="shield-avatar">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C89B54" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <div>
+              <div class="user-name">Alex Morgan</div>
+              <div class="user-role">Level 12 · Strategist</div>
+            </div>
+          </div>
+
+          <div class="rank-box">
+            <div class="rank-top">
+              <span class="rank-tier">GOLD II</span>
+              <span class="rank-top-pct">TOP 12%</span>
+            </div>
+            <div class="rank-rp">1,840 RP</div>
+          </div>
+
+          <div class="sidebar-section-label">YOUR PLAYBOOK</div>
+          <nav class="sidebar-nav">
+            <a href="#" class="s-nav-item active">
+              <span class="icon">⊞</span> Command center
+            </a>
+            <a href="#" class="s-nav-item">
+              <span class="icon">❐</span> My collection
+              <span class="badge-count">3</span>
+            </a>
+            <a href="#" class="s-nav-item">
+              <span class="icon">📖</span> Strategy academy
+            </a>
+            <a href="#" class="s-nav-item">
+              <span class="icon">🏆</span> Leaderboard
+            </a>
+            <a href="#" class="s-nav-item">
+              <span class="icon">📈</span> Match history
+            </a>
+          </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+          <div class="edge-card">
+            <div class="edge-icon">📖</div>
+            <h4>Keep your edge.</h4>
+            <p>Business fundamentals</p>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill burgundy" style="width: 68%;"></div>
+            </div>
+            <div class="edge-pct">68% complete</div>
+            <a href="#" class="edge-link">Continue learning →</a>
+          </div>
+
+          <div class="sidebar-footer-links">
+            <a href="#">⚙ Settings</a>
+            <a href="#">? Help & fair play</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Dashboard Content -->
+      <main class="dashboard-main">
+        <!-- Top Bar -->
+        <header class="dash-topbar">
+          <div class="breadcrumb">
+            <span class="muted">PLAY /</span> <strong>Command center</strong>
+          </div>
+          <div class="topbar-widgets">
+            <div class="currency-pill">
+              <span class="coin-icon">$</span>
+              <strong>2,450</strong>
+              <button class="plus-btn">+</button>
+            </div>
+            <div class="energy-pill">
+              <span>⚡ 8 / 10</span>
+            </div>
+            <div class="notif-btn">
+              🔔<span class="red-dot"></span>
+            </div>
+            <div class="shield-btn">🛡</div>
+          </div>
+        </header>
+
+        <div class="dash-content">
+          <!-- Welcome Header -->
+          <div class="welcome-row">
+            <div>
+              <h1 class="dash-title">Your next move, Alex.</h1>
+              <p class="script-accent burgundy-text">The market is open. Make your strategy count.</p>
+            </div>
+            <div class="season-info">
+              <div class="season-tag">SEASON 04</div>
+              <div class="season-name">The Founder’s Edge <span class="muted-sm">12d left</span></div>
+            </div>
+          </div>
+
+          <!-- Daily Challenge Banner -->
+          <div class="daily-challenge-box">
+            <div class="dc-left">
+              <span class="dc-bolt">⚡</span>
+              <div>
+                <div class="dc-tag">DAILY CHALLENGE</div>
+                <div class="dc-text">Win 2 matches with a Growth deck</div>
+              </div>
+            </div>
+            <div class="dc-progress">
+              <span class="dc-count">1 / 2</span>
+              <div class="dc-bar">
+                <div class="dc-fill" style="width: 50%;"></div>
+              </div>
+            </div>
+            <div class="dc-right">
+              <span class="xp-reward">+150 XP</span>
+              <a href="#" class="view-challenge">View challenge →</a>
+            </div>
+          </div>
+
+          <!-- Choose Your Arena -->
+          <div class="section-sub-row">
+            <span class="micro-label">CHOOSE YOUR ARENA</span>
+            <span class="muted-sm">One strategy. A world of possibilities.</span>
+          </div>
+
+          <div class="dash-arenas-grid">
+            <!-- Co-op Card -->
+            <div class="dash-mode-card green-mode">
+              <div class="mode-tag">COOPERATIVE / YOU + 2 AI AGENTS</div>
+              <h2>3v3 AI Co-op Strategy</h2>
+              <p class="script-white-sm">
+                Assemble your board. Combine your expertise with<br>
+                specialized AI agents to outsmart the competition.
+              </p>
+
+              <div class="trio-cards-display">
+                <div class="role-card tilt-l">
+                  <div class="role-top green-bg">↗</div>
+                  <div class="role-body">
+                    <strong>THE ANALYST</strong>
+                    <span>FINANCE AI</span>
+                  </div>
+                </div>
+                <div class="role-card center-r">
+                  <div class="role-top green-bg">🛡</div>
+                  <div class="role-body">
+                    <strong>YOU</strong>
+                    <span>TEAM LEAD</span>
+                  </div>
+                </div>
+                <div class="role-card tilt-r">
+                  <div class="role-top green-bg">👥</div>
+                  <div class="role-body">
+                    <strong>THE DEALER</strong>
+                    <span>NEGOTIATION AI</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mode-meta">
+                <span>TACTICAL TEAMWORK</span>
+                <span>🕒 15–20 min</span>
+              </div>
+
+              <button class="btn-white-full" onclick="navigateTo('frame-3')">
+                <span>Build your team</span>
+                <span>→</span>
+              </button>
+            </div>
+
+            <!-- PvP Card -->
+            <div class="dash-mode-card burgundy-mode">
+              <div class="mode-tag">COMPETITIVE / REAL-TIME PVP</div>
+              <h2>1v1 PvP Market Duel</h2>
+              <p class="script-white-sm">
+                Read your rival. Start price wars, negotiate bold deals,<br>
+                and claim your share of the market.
+              </p>
+
+              <div class="duel-cards-display">
+                <div class="duel-card tilt-l">
+                  <div class="duel-top green-bg">
+                    <div class="duel-price">$80</div>
+                    <div class="duel-sub">MARKET VALUE</div>
+                  </div>
+                  <div class="duel-body">
+                    <strong>PRICE WAR</strong>
+                    <span>OFFENSIVE TACTIC</span>
+                  </div>
+                </div>
+
+                <span class="vs-badge">VS</span>
+
+                <div class="duel-card tilt-r">
+                  <div class="duel-top burgundy-bg">
+                    <div class="duel-price">$95</div>
+                    <div class="duel-sub">MARKET VALUE</div>
+                  </div>
+                  <div class="duel-body">
+                    <strong>COUNTEROFFER</strong>
+                    <span>DEFENSIVE TACTIC</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mode-meta">
+                <span>RANKED OR CASUAL</span>
+                <span>🕒 8–12 min</span>
+              </div>
+
+              <button class="btn-white-full" onclick="navigateTo('frame-3')">
+                <span>Find an opponent</span>
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Keep Your Momentum -->
+          <div class="section-sub-row">
+            <span class="micro-label">KEEP YOUR MOMENTUM</span>
+            <a href="#" class="burgundy-link">View all activity →</a>
+          </div>
+
+          <div class="momentum-grid">
+            <div class="academy-card">
+              <div class="ac-top">
+                <div class="ac-icon">↗</div>
+                <div>
+                  <div class="micro-label burgundy-text">STRATEGY ACADEMY</div>
+                  <h3>The art of negotiation</h3>
+                  <p class="muted-sm">Lesson 4 of 6 · 8 min</p>
+                </div>
+              </div>
+              <div class="ac-progress">
+                <div class="ac-fill" style="width: 66%;"></div>
+              </div>
+              <div class="ac-footer">
+                <span class="muted-sm">Pick up where you left off</span>
+                <a href="#" class="burgundy-link">Continue →</a>
+              </div>
+            </div>
+
+            <div class="history-card">
+              <h3>Last at the table</h3>
+              <table class="history-table">
+                <thead>
+                  <tr>
+                    <th>MODE</th>
+                    <th></th>
+                    <th>RESULT</th>
+                    <th>RANK POINTS</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>🏆 Market Duel</strong></td>
+                    <td class="muted-sm">vs. Jordan K.</td>
+                    <td><span class="pill-victory">VICTORY</span></td>
+                    <td class="green-bold">+24 RP</td>
+                    <td class="muted-sm">2h ago</td>
+                  </tr>
+                  <tr>
+                    <td><strong>👥 AI Co-op</strong></td>
+                    <td class="muted-sm">The Expansion play</td>
+                    <td><span class="pill-victory">VICTORY</span></td>
+                    <td class="green-bold">+18 RP</td>
+                    <td class="muted-sm">Yesterday</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       FRAMES 3 & 4: THE BOARDROOM (GAMEPLAY + AI CO-PILOT DRAWER)
+  ========================================================== -->
+  <section id="frame-3" class="screen">
+    <div class="boardroom-layout">
+      <!-- Top Header -->
+      <header class="board-header">
+        <div class="board-brand">
+          <div class="logo-mark green-solid"></div>
+          <span class="logo-text green-text">BUSINESS<br>CRAFT</span>
+          <span class="board-room-title">The boardroom</span>
+          <span class="board-mode-crumb">Ranked &nbsp;/&nbsp; Market Duel</span>
+        </div>
+        <div class="board-header-right">
+          <span class="match-id">MATCH #BC-2048</span>
+          <button class="btn-exit-match" onclick="navigateTo('frame-5')">Exit match</button>
+        </div>
+      </header>
+
+      <!-- Turn Banner -->
+      <div class="turn-header-row">
+        <div>
+          <h1 class="turn-title">The next move is yours.</h1>
+          <p class="script-muted">Round 4 of 8 · Expansion phase</p>
+        </div>
+        <div class="turn-timer-box">
+          <div>
+            <div class="timer-tag">YOUR TURN</div>
+            <div class="timer-sub">Choose your next play</div>
+          </div>
+          <div class="timer-clock" id="match-timer">00:42</div>
+        </div>
+      </div>
+
+      <!-- Main Arena Grid -->
+      <div class="arena-workspace">
+        <!-- Left Business Telemetry Panel -->
+        <aside class="telemetry-panel">
+          <div class="tel-block">
+            <div class="micro-label green-text">YOUR BUSINESS</div>
+            <h2 class="company-name">Morgan & Co.</h2>
+            <p class="script-muted-sm">Growth-stage challenger</p>
+          </div>
+
+          <div class="tel-divider"></div>
+
+          <div class="tel-block">
+            <div class="script-muted-sm">Market Share (%)</div>
+            <div class="metric-row">
+              <span class="big-stat green-text" id="player-share">32%</span>
+              <span class="delta-up">↑ 8 pts</span>
+            </div>
+            <div class="share-bar">
+              <div class="share-fill" style="width: 32%;"></div>
+            </div>
+          </div>
+
+          <div class="tel-divider"></div>
+
+          <div class="tel-block">
+            <div class="script-muted-sm">Cash Runway ($)</div>
+            <div class="big-stat dark-text" id="player-cash">$480k</div>
+            <div class="script-muted-sm">6 turns at current burn</div>
+          </div>
+
+          <div class="tel-divider"></div>
+
+          <div class="tel-block">
+            <div class="micro-label">NEAREST RIVAL</div>
+            <div class="rival-name">Jordan K. · Apex Inc.</div>
+            <div class="rival-share">28% share</div>
+            <div class="script-muted-sm">$520k runway</div>
+          </div>
+        </aside>
+
+        <!-- Center Green Table Board -->
+        <div class="game-table">
+          <!-- Opponent Hand Row -->
+          <div class="opponent-row">
+            <span class="opp-label">APEX INC. / OPPONENT</span>
+            <div class="opp-cards">
+              <div class="card-back">BC</div>
+              <div class="card-back">BC</div>
+              <div class="card-back">BC</div>
+            </div>
+            <span class="opp-label">3 CARDS IN HAND</span>
+          </div>
+
+          <div class="table-inner-line"></div>
+
+          <div class="table-headline">
+            <h2>The market is moving.</h2>
+            <p class="script-white-sm">Build momentum. Protect what you have earned.</p>
+          </div>
+
+          <!-- 3 Active Slots on Table -->
+          <div class="table-slots-grid">
+            <!-- Slot 1: Live Market Event -->
+            <div class="table-card crisis-card" id="crisis-slot">
+              <div class="card-top-stripe burgundy-bg"></div>
+              <div class="tc-body">
+                <div class="tc-tag burgundy-text">LIVE MARKET EVENT · ROUND 04</div>
+                <h3>Reputation at risk</h3>
+                <p class="script-gray">
+                  A customer complaint is gaining traction.<br>
+                  Respond before trust turns into churn.
+                </p>
+                <div class="tc-divider"></div>
+                <div class="crisis-penalty" id="crisis-status">−6% share if unresolved</div>
+              </div>
+            </div>
+
+            <!-- Slot 2: Active Play -->
+            <div class="table-card active-play-card">
+              <div class="tc-body">
+                <div class="tc-tag green-text">YOUR ACTIVE PLAY</div>
+                <h3>Product<br>Innovation</h3>
+                <div class="rd-watermark">R&D</div>
+                <div class="tc-divider"></div>
+                <div class="green-italic">+8% market share</div>
+                <div class="muted-sm">2 turns remaining</div>
+              </div>
+            </div>
+
+            <!-- Slot 3: Drop Zone -->
+            <div class="drop-zone-slot" id="drop-zone">
+              <div class="plus-gold">+</div>
+              <h4>Your next move</h4>
+              <p class="script-white-sm">Select a card from your hand<br>to preview its impact.</p>
+            </div>
+
+            <!-- Board Number -->
+            <div class="board-round-indicator">
+              <span>BOARD</span>
+              <strong>04</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Hand Section -->
+      <div class="hand-workspace">
+        <div class="hand-meta">
+          <h3>Your hand</h3>
+          <p class="script-muted-sm">Four cards. One defining move.</p>
+          <div class="ap-counter">2 / 3</div>
+          <div class="script-muted-sm">Action points available</div>
+          <div class="ap-dots">
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot"></span>
+          </div>
+          <p class="script-muted-xs">Draw a new card next round</p>
+        </div>
+
+        <div class="hand-cards-area">
+          <div class="micro-label">BUSINESS CARDS &nbsp;/&nbsp; 4 OF 6</div>
+          <div class="hand-cards-row">
+            <!-- Card 1 -->
+            <div class="hand-card" data-card="budget" onclick="selectHandCard(this)">
+              <div class="hc-cat green-text">FINANCE</div>
+              <h4>Budget<br>Allocation</h4>
+              <div class="hc-effect green-text">+$120k</div>
+              <p>Strengthen your cash runway.</p>
+              <div class="hc-footer">
+                <span>1 AP</span>
+                <span>PLAY CARD →</span>
+              </div>
+            </div>
+
+            <!-- Card 2 (Default Selected) -->
+            <div class="hand-card selected burgundy-card-active" data-card="pr" onclick="selectHandCard(this)">
+              <div class="hc-cat">REPUTATION</div>
+              <h4>PR Crisis<br>Management</h4>
+              <div class="hc-effect gold-text">Protect 6%</div>
+              <p>Resolve the active market crisis.</p>
+              <div class="hc-footer">
+                <span>2 AP</span>
+                <span class="status-label">SELECTED</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="hand-card" data-card="partnership" onclick="selectHandCard(this)">
+              <div class="hc-cat green-text">GROWTH</div>
+              <h4>Strategic<br>Partnership</h4>
+              <div class="hc-effect green-text">+5% share</div>
+              <p>Build reach through an alliance.</p>
+              <div class="hc-footer">
+                <span>2 AP</span>
+                <span>PLAY CARD →</span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="hand-card" data-card="research" onclick="selectHandCard(this)">
+              <div class="hc-cat green-text">INTELLIGENCE</div>
+              <h4>Market<br>Research</h4>
+              <div class="hc-effect green-text">Reveal 2</div>
+              <p>See your rival’s next two cards.</p>
+              <div class="hc-footer">
+                <span>1 AP</span>
+                <span>PLAY CARD →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hand-actions">
+          <p class="script-muted-sm">Need a second opinion?</p>
+          <button class="btn-green-solid" onclick="toggleAdvisor(true)">AI Co-Pilot →</button>
+          <p class="script-muted-sm">Choose a card, then<br>confirm your play.</p>
+          <button class="btn-burgundy-solid full-w" id="play-selected-btn" onclick="playSelectedCard()">
+            Play selected →
+          </button>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           FRAME 4 OVERLAY: AI STRATEGY ADVISOR DRAWER
+      ========================================================== -->
+      <div class="drawer-backdrop" id="advisor-backdrop" onclick="toggleAdvisor(false)"></div>
+      <aside class="advisor-drawer" id="advisor-drawer">
+        <div class="drawer-header">
+          <div class="advisor-title-group">
+            <div class="advisor-badge">🦊</div>
+            <div>
+              <div class="micro-label green-text">AI CO-PILOT &nbsp;/&nbsp; ONLINE</div>
+              <h2>AI Strategy Advisor</h2>
+            </div>
+          </div>
+          <button class="close-drawer" onclick="toggleAdvisor(false)">×</button>
+        </div>
+
+        <div class="crisis-alert-box">
+          <div class="micro-label burgundy-text">CRISIS DETECTED</div>
+          <p class="script-burgundy">Your reputation needs a response.</p>
+        </div>
+
+        <h3 class="advisor-headline">Contain first. Grow next.</h3>
+        <p class="script-gray">
+          Play PR Crisis Management before investing<br>
+          in expansion. Trust is your strongest asset.
+        </p>
+
+        <div class="micro-label">PROJECTED IMPACT</div>
+        <div class="impact-grid">
+          <div class="impact-box">
+            <span class="script-muted-sm">Share at risk</span>
+            <strong class="burgundy-text">−6 pts</strong>
+          </div>
+          <div class="impact-box">
+            <span class="script-muted-sm">Response cost</span>
+            <strong class="green-text">$60k</strong>
+          </div>
+        </div>
+        <p class="muted-xs">Estimates based on the current board state.</p>
+
+        <h4 class="lesson-heading">A lesson from the real world</h4>
+        <div class="case-studies-box">
+          <div class="case-item">
+            <div class="micro-label burgundy-text">01 &nbsp;/&nbsp; TYLENOL · 1982</div>
+            <p>Put customer safety before short-term revenue. Decisive action can rebuild long-term trust.</p>
+          </div>
+          <div class="case-divider"></div>
+          <div class="case-item">
+            <div class="micro-label burgundy-text">02 &nbsp;/&nbsp; DOMINO’S · 2009</div>
+            <p>Acknowledge the issue. Respond where your audience is already having the conversation.</p>
+          </div>
+        </div>
+
+        <div class="next-moves-banner">
+          <div class="micro-label gold-text">YOUR NEXT TWO MOVES</div>
+          <div class="moves-list">
+            <span>1. Stabilize reputation</span>
+            <span>2. Reallocate budget</span>
+          </div>
+        </div>
+
+        <p class="script-muted-center">Your call. The advisor never plays for you.</p>
+
+        <button class="btn-burgundy-solid full-w" onclick="executeAdvisorRecommendation()">
+          Play PR Crisis Management →
+        </button>
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       FRAME 5: MATCH COMPLETE / VICTORY SCREEN
+  ========================================================== -->
+  <section id="frame-5" class="screen">
+    <div class="victory-layout">
+      <!-- Top Header -->
+      <header class="board-header">
+        <div class="board-brand">
+          <div class="logo-mark green-solid"></div>
+          <span class="logo-text green-text">BUSINESS<br>CRAFT</span>
+          <span class="board-room-title">The boardroom</span>
+          <span class="board-mode-crumb">Ranked &nbsp;/&nbsp; Match complete</span>
+        </div>
+        <div class="board-header-right">
+          <span class="match-id">MATCH #BC-2048</span>
+          <button class="btn-exit-match" onclick="navigateTo('frame-2')">Back to lobby</button>
+        </div>
+      </header>
+
+      <div class="victory-container">
+        <!-- Title & Rewards Row -->
+        <div class="victory-hero-row">
+          <div>
+            <div class="micro-label green-text">VICTORY &nbsp;/&nbsp; MARKET DUEL</div>
+            <h1 class="victory-title">A well-played victory.</h1>
+            <p class="script-muted">Morgan & Co. vs. Apex Inc. &nbsp;·&nbsp; 8 rounds &nbsp;·&nbsp; 18 min</p>
+          </div>
+
+          <div class="rewards-card">
+            <div class="micro-label burgundy-text">MATCH REWARDS</div>
+            <div class="rewards-points">+240 points</div>
+            <div class="script-muted-sm">+24 rank points &nbsp;·&nbsp; Gold II</div>
+          </div>
+        </div>
+
+        <!-- 3 Metrics Cards -->
+        <div class="victory-metrics-grid">
+          <!-- Card 1: Strategic Efficiency -->
+          <div class="v-card">
+            <h3>Strategic efficiency</h3>
+            <div class="v-score-row">
+              <div>
+                <span class="v-big-num green-text">92</span>
+                <span class="muted-sm">/ 100</span>
+              </div>
+              <span class="green-delta">↑ 12 vs. last match</span>
+            </div>
+            <p class="script-muted-sm">Better decisions. Stronger momentum.</p>
+
+            <!-- Line Chart SVG -->
+            <svg viewBox="0 0 260 80" class="efficiency-chart">
+              <line x1="0" y1="20" x2="260" y2="20" stroke="#EFECE4" stroke-width="1"/>
+              <line x1="0" y1="45" x2="260" y2="45" stroke="#EFECE4" stroke-width="1"/>
+              <line x1="0" y1="70" x2="260" y2="70" stroke="#EFECE4" stroke-width="1"/>
+              <polyline fill="none" stroke="#153B2E" stroke-width="2"
+                points="10,65 45,56 80,60 115,35 150,40 185,22 220,14 250,5"/>
+              <circle cx="10" cy="65" r="2.5" fill="#153B2E"/>
+              <circle cx="45" cy="56" r="2.5" fill="#153B2E"/>
+              <circle cx="80" cy="60" r="2.5" fill="#153B2E"/>
+              <circle cx="115" cy="35" r="2.5" fill="#153B2E"/>
+              <circle cx="150" cy="40" r="2.5" fill="#153B2E"/>
+              <circle cx="185" cy="22" r="2.5" fill="#153B2E"/>
+              <circle cx="220" cy="14" r="2.5" fill="#153B2E"/>
+              <circle cx="250" cy="5" r="2.5" fill="#153B2E"/>
+            </svg>
+            <div class="chart-x-labels">
+              <span>R1</span>
+              <span>R4</span>
+              <span>R8</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Budget Score -->
+          <div class="v-card">
+            <h3>Budget score</h3>
+            <div class="v-score-row">
+              <div>
+                <span class="v-big-num burgundy-text">84</span>
+                <span class="muted-sm">/ 100</span>
+              </div>
+            </div>
+            <p class="script-muted-sm">Capital used, not wasted.</p>
+
+            <div class="budget-bars">
+              <div class="b-bar-row">
+                <span>Investment</span>
+                <div class="b-track"><div class="b-fill green-bg" style="width: 91%;"></div></div>
+                <strong>91</strong>
+              </div>
+              <div class="b-bar-row">
+                <span>Operations</span>
+                <div class="b-track"><div class="b-fill burgundy-bg" style="width: 78%;"></div></div>
+                <strong>78</strong>
+              </div>
+              <div class="b-bar-row">
+                <span>Reserves</span>
+                <div class="b-track"><div class="b-fill green-bg" style="width: 83%;"></div></div>
+                <strong>83</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Market Share Winner -->
+          <div class="v-card dark-green-card">
+            <div class="micro-label gold-text">YOU WON THE MARKET</div>
+            <div class="big-pct-white">46%</div>
+            <p class="script-white-sm">Final market share &nbsp;·&nbsp; +22 pts since round 1</p>
+
+            <div class="stacked-share-bar">
+              <div class="seg-you" style="width: 46%;"></div>
+              <div class="seg-rival" style="width: 34%;"></div>
+              <div class="seg-other" style="width: 20%;"></div>
+            </div>
+
+            <div class="share-legend">
+              <span>You 46%</span>
+              <span>Apex 34%</span>
+              <span>Others 20%</span>
+            </div>
+
+            <div class="dark-divider"></div>
+
+            <div class="cash-close-row">
+              <span class="script-white-sm">Cash at close</span>
+              <strong class="cash-val">$620k</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row: Decision Review & Webinar Promo -->
+        <div class="victory-bottom-grid">
+          <div class="v-card lesson-review-card">
+            <div class="lr-header">
+              <div>
+                <h3>Every move is a lesson.</h3>
+                <p class="script-muted-sm">Two key mistakes to sharpen your next strategy.</p>
+              </div>
+              <span class="micro-label burgundy-text">DECISION REVIEW</span>
+            </div>
+
+            <div class="mistake-list">
+              <div class="mistake-item">
+                <div class="round-badge">R03</div>
+                <div class="mistake-info">
+                  <strong>Overcommitted to expansion</strong>
+                  <p class="script-muted-sm">A second growth play left too little cash in reserve.</p>
+                  <div class="green-tip">Keep at least two turns of runway before scaling.</div>
+                </div>
+                <div class="mistake-cost">−$40k</div>
+              </div>
+
+              <div class="mistake-item">
+                <div class="round-badge">R06</div>
+                <div class="mistake-info">
+                  <strong>Responded one turn too late</strong>
+                  <p class="script-muted-sm">A delayed crisis response let reputation risk compound.</p>
+                  <div class="green-tip">Resolve trust issues before pursuing market share.</div>
+                </div>
+                <div class="mistake-cost">−4 pts</div>
+              </div>
+            </div>
+
+            <div class="lr-footer">
+              <span class="script-muted-sm">Small adjustments. A stronger next game.</span>
+              <button class="btn-cream-outline" onclick="navigateTo('frame-3')">Review replay →</button>
+            </div>
+          </div>
+
+          <div class="v-card dark-green-card webinar-card">
+            <div class="micro-label gold-text">RECOMMENDED FOR YOUR NEXT MOVE</div>
+            <h3 class="webinar-sub">Expert Webinars</h3>
+            <h2 class="webinar-title">Crisis leadership:<br>Turn pressure into trust.</h2>
+            <p class="script-white-sm">
+              A 45-minute expert session on decisive responses,<br>
+              reputation recovery, and protecting your runway.
+            </p>
+
+            <div class="dark-divider"></div>
+
+            <div class="webinar-price-row">
+              <strong>600 points</strong>
+              <span class="script-white-sm">or $29</span>
+            </div>
+            <div class="balance-note">Your balance: 2,690 points</div>
+
+            <div class="webinar-btns">
+              <button class="btn-burgundy-solid" id="unlock-webinar-btn" onclick="unlockWebinar()">
+                Unlock with points
+              </button>
+              <button class="btn-green-tinted">Buy for $29</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Frame Switcher (For easy inspection of all 5 frames) -->
+  <div class="frame-switcher" title="Швидкий перехід між фреймами">
+    <span>Frames:</span>
+    <button onclick="navigateTo('frame-1')" class="fs-btn active" data-target="frame-1">1</button>
+    <button onclick="navigateTo('frame-2')" class="fs-btn" data-target="frame-2">2</button>
+    <button onclick="navigateTo('frame-3', false)" class="fs-btn" data-target="frame-3">3</button>
+    <button onclick="navigateTo('frame-3', true)" class="fs-btn" data-target="frame-4">4</button>
+    <button onclick="navigateTo('frame-5')" class="fs-btn" data-target="frame-5">5</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
